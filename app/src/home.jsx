@@ -88,7 +88,7 @@ export default function Home() {
             : "text-center mt-10 mb-5"
         }
       >
-        ✩──────────✩─────────✩
+       ━━━━ ◦: ✧✲✧ :◦━━━━
       </p>
       <p className="text-3xl font-bold text-purple-400 text-center mt-10  selection:text-orange-500">
         Designing
@@ -155,7 +155,7 @@ export default function Home() {
         </p>
         <div className="w-2/3 flex justify-between mt-3 mx-auto flex-wrap">
           <a
-            className=" bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 bg-clip-text text-transparent text-xl  font-bold font-deca selection:text-orange-700 dark:selection:text-white/90"
+            className="text-sm sm:text-md md:text-xl xl:text-xl 2xl:text-xl bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 bg-clip-text text-transparent   font-bold font-deca selection:text-orange-700 dark:selection:text-white/90"
             href="https://www.linkedin.com/in/siddharth-pareek-75514b190/"
             target="_blank"
           >
@@ -163,7 +163,7 @@ export default function Home() {
             ln@SiddharthPareek
           </a>
           <a
-            className=" bg-gradient-to-r from-red-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-xl  font-bold font-deca selection:text-orange-700 dark:selection:text-white/90"
+            className=" bg-gradient-to-r from-red-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-sm sm:text-md md:text-xl xl:text-xl 2xl:text-xl  font-bold font-deca selection:text-orange-700 dark:selection:text-white/90"
             href="https://www.instagram.com/siddharthian333/"
             target="_blank"
           >
@@ -179,7 +179,7 @@ export default function Home() {
             : "text-black  selection:text-orange-400 text-center mt-10"
         }
       >
-        ◥ ▬▬▬▬▬▬ ◆ ▬▬▬▬▬▬ ◤
+          ━━━━ ◦: ✧✲✧ :◦━━━━
       </p>
       <div className="mt-10 mx-auto flex w-56 justify-between">
         <a

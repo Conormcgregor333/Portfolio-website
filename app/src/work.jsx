@@ -21,7 +21,7 @@ export default function Work() {
             : "text-black  selection:text-orange-400 text-center mt-5 mb-10 text-xl"
         }
       >
-        ✩──────────✩─────────✩
+         ━━━━ ◦: ✧✲✧ :◦━━━━
       </p>
       <div className="flex justify-around flex-wrap ">
         <a
@@ -116,7 +116,7 @@ export default function Work() {
             : "text-black  selection:text-orange-400 text-center mt-5 mb-10 text-xl"
         }
       >
-        。☆✼★━━━━━━━━━━━━★✼☆。
+         ━━━━ ◦: ✧✲✧ :◦━━━━
       </p>
       <div className="mt-10 mx-auto flex w-56 justify-between">
         <a

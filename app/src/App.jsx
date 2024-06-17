@@ -81,7 +81,7 @@ function App() {
             </p>
 
             <div className=" justify-between md:flex xl:flex 2xl:flex hidden ">
-              <p
+              <p 
                 className={
                   localStorage.getItem("theme") == "light"
                     ? "font-bold text-xl mx-2 text-black hover:text-red-500 cursor-pointer"
@@ -92,7 +92,7 @@ function App() {
                 <Link to="/about">About</Link>
               </p>
 
-              <p
+              <p 
                 className={
                   localStorage.getItem("theme") == "light"
                     ? "font-bold text-xl mx-2 text-black hover:text-red-500 cursor-pointer"
@@ -103,7 +103,7 @@ function App() {
                 <Link to="/work">Work</Link>
               </p>
 
-              <p
+              <p 
                 className={
                   localStorage.getItem("theme") == "light"
                     ? "font-bold text-xl mx-2 text-black hover:text-red-500 cursor-pointer"
@@ -186,21 +186,27 @@ function App() {
                 : "block nav2 fixed sm:hidden md:hidden xl:hidden 2xl:hidden bg-gray-200 w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 rounded-xl h-28  "
             }
           >
-            <div className="text-center mt-1 font-bold text-xl">
+            <div  onClick={() => {
+                setHam(!ham);
+              }} className="text-center mt-1 font-bold text-xl">
               {" "}
               <Link to="/about">About</Link>
             </div>
-            <div className="text-center mt-1 my-1 font-bold text-xl">
+            <div  onClick={() => {
+                setHam(!ham);
+              }} className="text-center mt-1 my-1 font-bold text-xl">
               {" "}
               <Link to="/work">Work</Link>
             </div>
-            <div className="text-center font-bold text-xl">
+            <div  onClick={() => {
+                setHam(!ham);
+              }} className="text-center font-bold text-xl">
               {" "}
               <Link to="/resume">Resume</Link>
             </div>
           </div>
         ) : null}
-        <div className=" translate-y-52 container absolute   top-0 -z-50">
+         <div className="translate-y-52 container absolute   top-0 -z-50">
           <div className="circle">
             <svg
               className="blur-xl svgStyle "
@@ -270,7 +276,7 @@ function App() {
             </svg>
           </div>
         </div>
-
+ 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

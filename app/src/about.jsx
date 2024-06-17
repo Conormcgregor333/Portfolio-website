@@ -18,14 +18,14 @@ export default function About() {
       >
         Siddharth Pareek 👋≧◉ᴥ◉≦
       </p>
-      <div className="w-72 sm:w-72 md:w-80 xl:w-80 2xl:w-80 mx-auto mt-10 mb-10 flex justify-between">
-        <div className="w-36 h-6 bg-red-400 text-white  rounded-md font-bold text-center text-sm">
+      <div className="flex-wrap w-72 sm:w-72 md:w-80 xl:w-80 2xl:w-80 mx-auto mt-10 mb-10 flex justify-around">
+        <div className="mt-2 w-36 h-6 bg-red-400 text-white  rounded-md font-bold text-center text-sm">
           Frontend Developer
         </div>
-        <div className="w-20 h-6 bg-blue-400 text-white  rounded-md font-bold text-center text-sm">
+        <div className= " w-20 h-6 bg-blue-400 text-white  rounded-md font-bold text-center text-sm">
           Design
         </div>
-        <div className="w-20 h-6 bg-green-800 text-white  rounded-md font-bold text-center text-sm">
+        <div className="mt-2 w-20 h-6 bg-green-800 text-white  rounded-md font-bold text-center text-sm">
           Tech
         </div>
       </div>
@@ -68,7 +68,7 @@ export default function About() {
             : "text-black  selection:text-orange-400 text-center mt-10"
         }
       >
-        ✧ ▬▭▬ ▬▭▬ ✦✧✦ ▬▭▬ ▬▭▬ ✧
+         ━━━━ ◦: ✧✲✧ :◦━━━━
       </p>
       <p
         className={
@@ -99,7 +99,7 @@ export default function About() {
             : "text-black  selection:text-orange-400 text-center mt-10 mb-10"
         }
       >
-        ✧ ▬▭▬ ▬▭▬ ✦✧✦ ▬▭▬ ▬▭▬ ✧
+        ━━━━ ◦: ✧✲✧ :◦━━━━
       </p>
       <div className="mt-10 mx-auto flex w-56 justify-between">
         <a
