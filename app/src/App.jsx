@@ -182,8 +182,8 @@ function App() {
           <div
             className={
               localStorage.getItem("theme") == "dark"
-                ? "block nav2 fixed sm:hidden md:hidden xl:hidden 2xl:hidden bg-gray-700 w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 rounded-xl h-28   opacity-65 text-white"
-                : "block nav2 fixed sm:hidden md:hidden xl:hidden 2xl:hidden bg-gray-200 w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 rounded-xl h-28   opacity-65"
+                ? "block nav2 fixed sm:hidden md:hidden xl:hidden 2xl:hidden bg-gray-700 w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 rounded-xl h-28    text-white"
+                : "block nav2 fixed sm:hidden md:hidden xl:hidden 2xl:hidden bg-gray-200 w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 rounded-xl h-28  "
             }
           >
             <div className="text-center mt-1 font-bold text-xl">
@@ -192,11 +192,11 @@ function App() {
             </div>
             <div className="text-center mt-1 my-1 font-bold text-xl">
               {" "}
-              <Link to="/tech">Tech</Link>
+              <Link to="/work">Work</Link>
             </div>
             <div className="text-center font-bold text-xl">
               {" "}
-              <Link to="/work">Work</Link>
+              <Link to="/resume">Resume</Link>
             </div>
           </div>
         ) : null}
