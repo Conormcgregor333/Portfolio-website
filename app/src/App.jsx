@@ -21,12 +21,12 @@ function App() {
     setTheme("light");
     localStorage.setItem("theme", "light");
   }
-  localStorage.getItem("theme") == "dark"
+   localStorage.getItem("theme") == "dark"
     ? (document.body.style.backgroundColor = "black")
-    : (document.body.style.backgroundColor = "white");
+    : (document.body.style.backgroundColor = "white"); 
   return (
     <context.Provider>
-      <div>
+      <div >
         <div className=" absolute  h-32 bg-red-600 top-grad blur-3xl "></div>
         <div className=" absolute  h-14 bg-blue-600 top-grad2 blur-3xl "></div>
 
@@ -182,8 +182,8 @@ function App() {
           <div
             className={
               localStorage.getItem("theme") == "dark"
-                ? "block nav2 fixed sm:hidden md:hidden xl:hidden 2xl:hidden bg-gray-700 w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 rounded-xl h-28    text-white"
-                : "block nav2 fixed sm:hidden md:hidden xl:hidden 2xl:hidden bg-gray-200 w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 rounded-xl h-28  "
+                ? "block mx-auto mt-36 sm:hidden md:hidden xl:hidden 2xl:hidden bg-gray-700 w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 rounded-xl h-28    text-white"
+                : "block mx-auto mt-36 sm:hidden md:hidden xl:hidden 2xl:hidden bg-gray-200 w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 rounded-xl h-28  "
             }
           >
             <div  onClick={() => {
@@ -206,7 +206,7 @@ function App() {
             </div>
           </div>
         ) : null}
-         <div className="translate-y-52 container absolute   top-0 -z-50">
+         <div className="translate-y-60 container absolute   top-0 -z-50">
           <div className="circle">
             <svg
               className="blur-xl svgStyle "

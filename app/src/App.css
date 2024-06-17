@@ -42,8 +42,8 @@
   }
 }
 .svgStyle {
-  width: 20rem;
-  height: 20rem;
+  width: 25rem;
+  height: 25rem;
 }
 @media screen and (max-width: 750px) {
   .svgStyle {
@@ -65,12 +65,12 @@
   transform: translate(-50%, -50%);
 }
 .nav2 {
-  left: 50%;
+/*   left: 50%;
   top: 23%;
-  transform: translate(-50%, -50%);
- /* animation-name: dropdown;
+  transform: translate(-50%, -50%); */
+  animation-name: dropdown;
 animation-duration: 1s;
-animation-iteration-count: 1; */ 
+animation-iteration-count: 1; 
 }
 @keyframes dropdown {
   0%{
