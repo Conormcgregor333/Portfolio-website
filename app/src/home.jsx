@@ -145,8 +145,8 @@ export default function Home() {
         <p
           className={
             localStorage.getItem("theme") == "dark"
-              ? "text-justufy w-2/3 mx-auto text-white  selection:text-orange-500"
-              : "text-justufy w-2/3 mx-auto  selection:text-orange-500"
+              ? "text-justify w-2/3 mx-auto text-white  selection:text-orange-500"
+              : "text-justify w-2/3 mx-auto  selection:text-orange-500"
           }
         >
           Feel free to connect with me regarding any opportunities or
