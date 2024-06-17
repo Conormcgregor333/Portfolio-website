@@ -1,0 +1,127 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+/* body {
+  background-color: black;
+} */
+.circle {
+  animation-name: circling;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-in-out;
+}
+
+.circle-reverse {
+  animation-name: circlingReverse;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-in-out;
+}
+@keyframes circling {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes circlingReverse {
+  0% {
+    transform: rotate(0deg) scale(1.05);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.025);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+.svgStyle {
+  width: 25rem;
+  height: 25rem;
+}
+@media screen and (max-width: 750px) {
+  .svgStyle {
+    height: 15rem;
+    width: 15rem;
+    transform: scale(1.4);
+  }
+}
+@media screen and (max-width: 450px) {
+  .svgStyle {
+    height: 9rem;
+    width: 9rem;
+    transform: scale(1.3);
+  }
+}
+.nav {
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+}
+.nav2 {
+  left: 50%;
+  top: 23%;
+  transform: translate(-50%, -50%);
+}
+.top-grad {
+  width: 100%;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, -50%);
+  border-radius: 0 0 50% 50%;
+}
+.top-grad2 {
+  width: 100%;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, -50%);
+  border-radius: 0 0 50% 50%;
+}
+
+.name {
+  font-family: "Playwrite NL", cursive;
+  font-optical-sizing: auto;
+}
+/* p:hover {
+  color: red;
+}
+ */
+.hamburger {
+  .ham1,
+  .ham2,
+  .ham3 {
+    height: 0.2rem;
+    width: 1.8rem;
+  }
+  .ham2 {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+}
+.hamburger-press {
+  .ham1 {
+    transform: translateY(0.5rem) rotateZ(45deg);
+    transition: 0.3s;
+  }
+  .ham3 {
+    transform: translateY(-0.5rem) rotateZ(-45deg);
+    transition: 0.3s;
+  }
+  .ham2 {
+    transform: translateX(15rem);
+    transition: 1s;
+  }
+}
+.gradient-text {
+  background: linear-gradient(pink, red);
+  background-clip: text;
+  p {
+    color: transparent;
+  }
+}
