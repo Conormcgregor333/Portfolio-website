@@ -10,7 +10,7 @@ useEffect(()=>{
         observer.unobserve(entry.target)
       }
   })
- },{root:null,rootMargin:"0px",threshold:0.1})
+ },{root:null,rootMargin:"0px",threshold:0})
 if(ref.current){observer.observe(ref.current)}
 else{observer.unobserve(ref.current)}
 return ()=>{if(ref.current){observer.unobserve(ref.current)}}
