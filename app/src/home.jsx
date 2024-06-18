@@ -1,9 +1,27 @@
+import { useEffect,useRef,createRef} from "react";
 export default function Home() {
+let ref=useRef(null);
+useEffect(()=>{
+ const observer=new IntersectionObserver((entries)=>{
+  entries.forEach((entry)=>{
+    if(entry.isIntersecting)
+      {
+        entry.target.classList.add('animate-on-scroll')
+        observer.unobserve(entry.target)
+      }
+  })
+ },{root:null,rootMargin:"0px",threshold:0.1})
+if(ref.current){observer.observe(ref.current)}
+else{observer.unobserve(ref.current)}
+return ()=>{if(ref.current){observer.unobserve(ref.current)}}
+
+}
+,[])
   return (
-    <div>
-      <div className=" flex flex-wrap justify-center md:justify-normal xl:justify-normal 2xl:justify-normal mt-40 mx-auto w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 place-items-center">
+    <div ref={ref} className="scroll-animate">
+      <div  className=" flex flex-wrap justify-center md:justify-normal xl:justify-normal 2xl:justify-normal mt-40 mx-auto w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 place-items-center">
         <img
-          className="block w-40 h-40 rounded-full "
+          className="block w-40 h-40 rounded-full"
           src="https://lakeviewlabs.io/wp-content/uploads/2018/11/File.jpg"
           alt=""
         />
@@ -11,11 +29,11 @@ export default function Home() {
           Siddharth Pareek
         </p>
       </div>
-      <p
+      <p 
         className={
           localStorage.getItem("theme") == "dark"
-            ? "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify text-white mt-10 selection:text-orange-500"
-            : "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify mt-10  selection:text-orange-500"
+            ? "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify text-white mt-10 selection:text-orange-500 "
+            : "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify mt-10  selection:text-orange-500 "
         }
       >
         A{" "}
@@ -50,13 +68,13 @@ export default function Home() {
       >
         ━━━━ ◦: ✧✲✧ :◦━━━━
       </p>
-      <p className="text-3xl font-bold text-purple-400 text-center mt-10  selection:text-orange-500">
+      <p   className="text-3xl font-bold text-purple-400 text-center mt-10   selection:text-orange-500 ">
         WebDevelopment
       </p>
-      <p
+      <p  
         className={
           localStorage.getItem("theme") == "dark"
-            ? "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify text-white mt-10  selection:text-orange-500"
+            ? "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify text-white mt-10  selection:text-orange-500 "
             : "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify mt-10  selection:text-orange-500"
         }
       >
@@ -76,7 +94,7 @@ export default function Home() {
           Typescript
         </div>
       </div>
-      <img
+      <img 
         className=" block mx-auto mt-10 border-4 border-purple-400 rounded-xl h-80 w-60 sm:w-72 md:w-80 xl:w-80 2xl:w-80 "
         src="https://cdn.dribbble.com/users/2559/screenshots/9443320/dribbble_2_4__4x.png"
         alt=""
@@ -90,14 +108,14 @@ export default function Home() {
       >
        ━━━━ ◦: ✧✲✧ :◦━━━━
       </p>
-      <p className="text-3xl font-bold text-purple-400 text-center mt-10  selection:text-orange-500">
+      <p   className="text-3xl font-bold text-purple-400 text-center mt-10  selection:text-orange-500 ">
         Designing
       </p>
-      <p
+      <p 
         className={
           localStorage.getItem("theme") == "dark"
             ? "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify text-white mt-10  selection:text-orange-500"
-            : "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify mt-10  selection:text-orange-500"
+            : "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify mt-10  selection:text-orange-500 "
         }
       >
         I believe that a website shouldn't just be aesthetically pleasing; it
@@ -117,7 +135,7 @@ export default function Home() {
           SASS
         </div>
       </div>
-      <img
+      <img 
         className=" block mx-auto mt-10 border-4 border-purple-400 rounded-xl h-80 w-60 sm:w-72 md:w-80 xl:w-80 2xl:w-80 "
         src="https://viaweb.co.za/wp-content/uploads/2019/06/responsive-web-square.jpg"
         alt=""
@@ -131,13 +149,13 @@ export default function Home() {
       >
         ━━━━ ◦: ✧✲✧ :◦━━━━
       </p>
-      <div
+      <div  
         style={
           localStorage.getItem("theme") == "light"
             ? { backgroundColor: "#e5e7eb" }
             : { backgroundColor: "#374151" }
         }
-        className="w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto h-96 sm:h-96 md:h-80 xl:h-80 3xl:h-60  rounded-3xl mt-16  opacity-65"
+        className="w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto h-96 sm:h-96 md:h-80 xl:h-80 3xl:h-60  rounded-3xl mt-16  opacity-65 "
       >
         <h2 class="pt-10 pb-10 text-center tracking-normal bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-2xl md:text-3xl lg:text-4xl font-bold font-deca selection:text-orange-700 dark:selection:text-white/90 ">
           Get in touch

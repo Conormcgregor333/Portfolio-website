@@ -1,6 +1,25 @@
+import { useEffect,useRef } from "react";
 export default function About() {
+  
+let ref=useRef(null);
+useEffect(()=>{
+ const observer=new IntersectionObserver((entries)=>{
+  entries.forEach((entry)=>{
+    if(entry.isIntersecting)
+      {
+        entry.target.classList.add('animate-on-scroll')
+        observer.unobserve(entry.target)
+      }
+  })
+ },{root:null,rootMargin:"0px",threshold:0.1})
+if(ref.current){observer.observe(ref.current)}
+else{observer.unobserve(ref.current)}
+return ()=>{if(ref.current){observer.unobserve(ref.current)}}
+
+}
+,[])
   return (
-    <div className="mt-40 mx-auto w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2">
+    <div ref={ref} className="mt-40 mx-auto w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 scroll-animate">
       <p className="text-center font-bold text-3xl bg-gradient-to-r from-blue-700  to-red-400 bg-clip-text text-transparent selection:text-orange-400">
         About me
       </p>

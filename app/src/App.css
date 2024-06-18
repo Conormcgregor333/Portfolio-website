@@ -162,3 +162,14 @@ animation-iteration-count: 1;
     color: transparent;
   }
 }
+
+ .scroll-animate{
+  opacity:0;
+  transform: translateX(-10rem);
+
+}
+.animate-on-scroll{
+ opacity: 1;
+ transform: translateX(0);
+ transition: 1s;
+} 
