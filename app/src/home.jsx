@@ -1,6 +1,6 @@
-import { useEffect,useRef,createRef, useState} from "react";
+import { useEffect, useState} from "react";
 export default function Home() {
-let ref=useRef(null);
+/* let ref=useRef(null); */
 let [cl,setCl]=useState('');
 useEffect(()=>{
  /* const observer=new IntersectionObserver((entries)=>{
