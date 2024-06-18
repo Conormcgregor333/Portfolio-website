@@ -1,8 +1,9 @@
-import { useEffect,useRef,createRef} from "react";
+import { useEffect,useRef,createRef, useState} from "react";
 export default function Home() {
 let ref=useRef(null);
+let [cl,setCl]=useState('');
 useEffect(()=>{
- const observer=new IntersectionObserver((entries)=>{
+ /* const observer=new IntersectionObserver((entries)=>{
   entries.forEach((entry)=>{
     if(entry.isIntersecting)
       {
@@ -10,15 +11,16 @@ useEffect(()=>{
         observer.unobserve(entry.target)
       }
   })
- },{root:null,rootMargin:"0px",threshold:0})
+ },{root:null,rootMargin:"0px",threshold:1})
 if(ref.current){observer.observe(ref.current)}
 else{observer.unobserve(ref.current)}
-return ()=>{if(ref.current){observer.unobserve(ref.current)}}
+return ()=>{if(ref.current){observer.unobserve(ref.current)}} */
 
+setCl("animate-on-scroll")
 }
 ,[])
   return (
-    <div ref={ref} className="scroll-animate">
+    <div /* ref={ref} */ className={`scroll-animate ${cl}`}>
       <div  className=" flex flex-wrap justify-center md:justify-normal xl:justify-normal 2xl:justify-normal mt-40 mx-auto w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 place-items-center">
         <img
           className="block w-40 h-40 rounded-full"

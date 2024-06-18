@@ -165,11 +165,13 @@ animation-iteration-count: 1;
 
  .scroll-animate{
   opacity:0;
-  transform: translateX(-10rem);
+ /*  transform: translateX(-10rem); */
+ transform:scale(0)
 
 }
 .animate-on-scroll{
  opacity: 1;
- transform: translateX(0);
- transition: 1s;
+/*  transform: translateX(0); */
+transform:scale(1);
+ transition: 0.7s;
 } 
