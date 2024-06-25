@@ -33,6 +33,27 @@ useEffect(()=>{
          ━━━━ ◦: ✧✲✧ :◦━━━━
       </p>
       <div className="flex justify-around flex-wrap ">
+      <a
+          className="block h-72 w-56"
+          href="https://crypto-pholia.vercel.app/"
+          alt=""
+          target="_blank"
+        >
+          <img
+            className="block h-56 w-56 rounded-xl"
+            src="https://static.vecteezy.com/system/resources/previews/011/064/679/large_2x/cryptocurrency-3d-illustration-free-png.png"
+            alt=""
+          />
+          <p
+            className={
+              localStorage.getItem("theme") == "dark"
+                ? "text-white text-md text-center"
+                : "text-gray-700 text-md text-center"
+            }
+          >
+            CryptoPholio - All crypto & NFT in one place
+          </p>
+        </a>
         <a
           className="block h-72 w-56"
           href="https://clever-books-blush.vercel.app/"
@@ -96,27 +117,7 @@ useEffect(()=>{
             Portfolio
           </p>
         </div>
-        <a
-          className="block h-72 w-56"
-          href="https://github.com/Conormcgregor333/weather-app"
-          alt=""
-          target="_blank"
-        >
-          <img
-            className="block h-56 w-56 rounded-xl"
-            src="https://static.vecteezy.com/system/resources/previews/012/066/500/original/sunny-and-snowy-day-weather-forecast-icon-meteorological-sign-3d-render-png.png"
-            alt=""
-          />
-          <p
-            className={
-              localStorage.getItem("theme") == "dark"
-                ? "text-white text-md text-center"
-                : "text-gray-700 text-md text-center"
-            }
-          >
-            An illustrative weather app ☔
-          </p>
-        </a>
+       
       </div>
       <p
         className={
