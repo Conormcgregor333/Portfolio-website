@@ -75,7 +75,7 @@ useEffect(()=>{
             CleverBooks [A SASS landing page!]
           </p>
         </a>
-        <a
+       {/*  <a
           className="block h-72 w-56"
           href="https://recipes-mu-three.vercel.app/"
           alt=""
@@ -95,7 +95,7 @@ useEffect(()=>{
           >
             Craving something 😋??[𝕣𝕖𝕔𝕚𝕡𝕖 finder is here]
           </p>
-        </a>
+        </a> */}
         <div
           onClick={() => {
             alert("🆈🅾🆄 are 🄲🅄🅁🅁🄴🄽🅃🄻🅈 on the webpage ( ͡❛ ͜ʖ ͡❛)");
