@@ -14,7 +14,7 @@ setCl("animate-on-scroll")
       </p>
       <img
         className="block h-40 w-40 rounded-full mx-auto mt-10 mb-10"
-        src="https://avatars.githubusercontent.com/u/95125131?v=4"
+        src="https://media.licdn.com/dms/image/D4D03AQFGFepBZ5dSIw/profile-displayphoto-shrink_800_800/0/1689420033115?e=1725494400&v=beta&t=ZCXY_ax6Dbn-BVuauMCcVCoIinvRbpRjOmqMzeV2_lo"
         alt=""
       />
       <p

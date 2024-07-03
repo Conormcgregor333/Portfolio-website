@@ -34,7 +34,7 @@ setCl("animate-on-scroll")
       <p 
         className={
           localStorage.getItem("theme") == "dark"
-            ? "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify text-white mt-10 selection:text-orange-500 "
+            ? "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify  text-white mt-10 selection:text-orange-500 "
             : "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify mt-10  selection:text-orange-500 "
         }
       >

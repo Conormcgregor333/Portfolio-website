@@ -8,11 +8,21 @@ import Work from "./work";
 import Tech from "./tech";
 import About from "./about";
 import { createContext } from "react";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+
+
+gsap.registerPlugin(useGSAP);
 export let context = createContext();
 function App() {
+ 
+  
+   
+  
   let [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
   let [ham, setHam] = useState(false);
-
+  
+ 
   function handleDark() {
     setTheme("dark");
     localStorage.setItem("theme", "dark");
@@ -182,8 +192,8 @@ function App() {
           <div
             className={
               localStorage.getItem("theme") == "dark"
-                ? "block mx-auto mt-36 sm:hidden md:hidden xl:hidden 2xl:hidden bg-gray-700 w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 rounded-xl h-28    text-white"
-                : "block mx-auto mt-36 sm:hidden md:hidden xl:hidden 2xl:hidden bg-gray-200 w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 rounded-xl h-28  "
+                ? " hamanim pt-1 block mx-auto mt-36 sm:hidden md:hidden xl:hidden 2xl:hidden bg-gray-700 w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 rounded-xl h-28    text-white"
+                : "hamanim pt-1 block mx-auto mt-36 sm:hidden md:hidden xl:hidden 2xl:hidden bg-gray-200 w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 rounded-xl h-28  "
             }
           >
             <div  onClick={() => {
