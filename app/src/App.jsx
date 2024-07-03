@@ -46,7 +46,7 @@ function App() {
               ? { backgroundColor: "#e5e7eb" }
               : { backgroundColor: "#374151" }
           }
-          className="absolute nav w-2/3  h-20 rounded-2xl  opacity-65 pt-7 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 "
+          className="absolute nav w-3/4  h-20 rounded-2xl  opacity-65 pt-7 sm:w-3/4 md:w-2/3 xl:w-1/2 2xl:w-1/2 "
         >
           <div className="flex justify-around mx-1 ">
             <div className="block sm:hidden md:hidden xl:hidden 2xl:hidden -translate-y-2">

@@ -21,7 +21,7 @@ setCl("animate-on-scroll")
 ,[])
   return (
     <div /* ref={ref} */ className={`scroll-animate ${cl}`}>
-      <div  className=" flex flex-wrap justify-center md:justify-normal xl:justify-normal 2xl:justify-normal mt-40 mx-auto w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 place-items-center">
+      <div  className=" flex flex-wrap justify-center md:justify-normal xl:justify-normal 2xl:justify-normal mt-40 mx-auto w-3/4 sm:w-3/4 md:w-2/3 xl:w-1/2 2xl:w-1/2 place-items-center">
         <img
           className="block w-40 h-40 rounded-full"
           src="https://lakeviewlabs.io/wp-content/uploads/2018/11/File.jpg"
@@ -34,8 +34,8 @@ setCl("animate-on-scroll")
       <p 
         className={
           localStorage.getItem("theme") == "dark"
-            ? "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify  text-white mt-10 selection:text-orange-500 "
-            : "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify mt-10  selection:text-orange-500 "
+            ? "w-3/4 sm:w-3/4 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify  text-white mt-10 selection:text-orange-500 "
+            : "w-3/4 sm:w-3/4 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify mt-10  selection:text-orange-500 "
         }
       >
         A{" "}
@@ -76,8 +76,8 @@ setCl("animate-on-scroll")
       <p  
         className={
           localStorage.getItem("theme") == "dark"
-            ? "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify text-white mt-10  selection:text-orange-500 "
-            : "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify mt-10  selection:text-orange-500"
+            ? "w-3/4 sm:w-3/4 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify text-white mt-10  selection:text-orange-500 "
+            : "w-3/4 sm:w-3/4 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify mt-10  selection:text-orange-500"
         }
       >
         Every project presents a unique challenge, and I thrive on the constant
@@ -97,7 +97,7 @@ setCl("animate-on-scroll")
         </div>
       </div>
       <img 
-        className=" block mx-auto mt-10 border-4 border-purple-400 rounded-xl h-80 w-60 sm:w-72 md:w-80 xl:w-80 2xl:w-80 "
+        className=" block mx-auto mt-10 border-4 border-purple-400 rounded-xl h-80 w-72 sm:w-72 md:w-80 xl:w-80 2xl:w-80 "
         src="https://cdn.dribbble.com/users/2559/screenshots/9443320/dribbble_2_4__4x.png"
         alt=""
       />
@@ -116,8 +116,8 @@ setCl("animate-on-scroll")
       <p 
         className={
           localStorage.getItem("theme") == "dark"
-            ? "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify text-white mt-10  selection:text-orange-500"
-            : "w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify mt-10  selection:text-orange-500 "
+            ? "w-3/4 sm:w-3/4 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify text-white mt-10  selection:text-orange-500"
+            : "w-3/4 sm:w-3/4 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify mt-10  selection:text-orange-500 "
         }
       >
         I believe that a website shouldn't just be aesthetically pleasing; it
@@ -138,7 +138,7 @@ setCl("animate-on-scroll")
         </div>
       </div>
       <img 
-        className=" block mx-auto mt-10 border-4 border-purple-400 rounded-xl h-80 w-60 sm:w-72 md:w-80 xl:w-80 2xl:w-80 "
+        className=" block mx-auto mt-10 border-4 border-purple-400 rounded-xl h-80 w-72 sm:w-72 md:w-80 xl:w-80 2xl:w-80 "
         src="https://viaweb.co.za/wp-content/uploads/2019/06/responsive-web-square.jpg"
         alt=""
       />
@@ -157,7 +157,7 @@ setCl("animate-on-scroll")
             ? { backgroundColor: "#e5e7eb" }
             : { backgroundColor: "#374151" }
         }
-        className="w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto h-96 sm:h-96 md:h-80 xl:h-80 3xl:h-60  rounded-3xl mt-16  opacity-65 "
+        className="w-3/4 sm:w-3/4 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto h-96 sm:h-96 md:h-80 xl:h-80 3xl:h-60  rounded-3xl mt-16  opacity-65 "
       >
         <h2 class="pt-10 pb-10 text-center tracking-normal bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-2xl md:text-3xl lg:text-4xl font-bold font-deca selection:text-orange-700 dark:selection:text-white/90 ">
           Get in touch
@@ -165,15 +165,15 @@ setCl("animate-on-scroll")
         <p
           className={
             localStorage.getItem("theme") == "dark"
-              ? "text-justify w-2/3 mx-auto text-white  selection:text-orange-500"
-              : "text-justify w-2/3 mx-auto  selection:text-orange-500"
+              ? "text-justify w-3/4 mx-auto text-white  selection:text-orange-500"
+              : "text-justify w-3/4 mx-auto  selection:text-orange-500"
           }
         >
           Feel free to connect with me regarding any opportunities or
           collaborations .I am open to work and contribute with my skills . You
           can find me using the given links below .
         </p>
-        <div className="w-2/3 flex justify-between mt-3 mx-auto flex-wrap">
+        <div className="w-3/4 flex justify-between mt-3 mx-auto flex-wrap">
           <a
             className="text-sm sm:text-md md:text-xl xl:text-xl 2xl:text-xl bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 bg-clip-text text-transparent   font-bold font-deca selection:text-orange-700 dark:selection:text-white/90"
             href="https://www.linkedin.com/in/siddharth-pareek-75514b190/"
