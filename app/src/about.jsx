@@ -28,7 +28,7 @@ setCl("animate-on-scroll")
       </p>
       <div className="flex-wrap w-72 sm:w-72 md:w-80 xl:w-80 2xl:w-80 mx-auto mt-10 mb-10 flex justify-around">
         <div className="mt-2 w-36 h-6 bg-red-400 text-white  rounded-md font-bold text-center text-sm">
-          Frontend Developer
+          Frontend
         </div>
         <div className= " w-20 h-6 bg-blue-400 text-white  rounded-md font-bold text-center text-sm">
           Design
