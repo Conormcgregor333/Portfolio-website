@@ -111,9 +111,9 @@ setCl("animate-on-scroll")
        ━━━━ ◦: ✧✲✧ :◦━━━━
       </p>
       <p   className="text-3xl font-bold text-purple-400 text-center mt-10  selection:text-orange-500 ">
-        Designing
+        Projects
       </p>
-      <p 
+     {/*  <p 
         className={
           localStorage.getItem("theme") == "dark"
             ? "w-3/4 sm:w-3/4 md:w-2/3 xl:w-1/2 2xl:w-1/2 mx-auto text-justify text-white mt-10  selection:text-orange-500"
@@ -125,8 +125,8 @@ setCl("animate-on-scroll")
         well-designed site is more than just visually appealing—it seamlessly
         aligns with the brand's voice, engages the user, and provides a clear,
         intuitive path to the desired outcomes.
-      </p>
-      <div className="w-72 sm:w-72 md:w-80 xl:w-80 2xl:w-80 mx-auto mt-5 flex justify-between">
+      </p> */}
+     {/*  <div className="w-72 sm:w-72 md:w-80 xl:w-80 2xl:w-80 mx-auto mt-5 flex justify-between">
         <div className="w-20 h-6 bg-red-400 text-white  rounded-md font-bold text-center text-sm">
           Bootstrap
         </div>
@@ -136,12 +136,90 @@ setCl("animate-on-scroll")
         <div className="w-20 h-6 bg-green-800 text-white  rounded-md font-bold text-center text-sm">
           SASS
         </div>
-      </div>
-      <img 
+      </div> */}
+     {/*  <img 
         className=" block mx-auto mt-10 border-4 border-purple-400 rounded-xl h-80 w-72 sm:w-72 md:w-80 xl:w-80 2xl:w-80 "
         src="https://viaweb.co.za/wp-content/uploads/2019/06/responsive-web-square.jpg"
         alt=""
-      />
+      /> */}
+      <div  className={`mt-10 mx-auto w-2/3 sm:w-2/3 md:w-2/3 xl:w-1/2 2xl:w-1/2 scroll-animate ${cl}`}>
+      <p
+        className={
+          localStorage.getItem("theme") == "dark"
+            ? "text-white  selection:text-orange-400 text-center mt-5 "
+            : "text-black  selection:text-orange-400 text-center mt-5 "
+        }
+      >
+        Here are some of my work and it was an amazing ⚡ experience developing them.❣
+      </p>
+      <div className="flex justify-around flex-wrap ">
+      <a
+          className="block h-72 w-56"
+          href="https://crypto-pholia.vercel.app/"
+          alt=""
+          target="_blank"
+        >
+          <img
+            className="block h-56 w-56 rounded-xl"
+            src="https://static.vecteezy.com/system/resources/previews/011/064/679/large_2x/cryptocurrency-3d-illustration-free-png.png"
+            alt=""
+          />
+          <p
+            className={
+              localStorage.getItem("theme") == "dark"
+                ? "text-white text-md text-center"
+                : "text-gray-700 text-md text-center"
+            }
+          >
+            CryptoPholio - All crypto & NFT in one place
+          </p>
+        </a>
+        <a
+          className="block h-72 w-56"
+          href="https://clever-books-blush.vercel.app/"
+          alt=""
+          target="_blank"
+        >
+          <img
+            className="block h-56 w-56 rounded-xl"
+            src="https://cdn3d.iconscout.com/3d/premium/thumb/web-development-5617617-4674328.png"
+            alt=""
+          />
+          <p
+            className={
+              localStorage.getItem("theme") == "dark"
+                ? "text-white text-md text-center"
+                : "text-gray-700 text-md text-center"
+            }
+          >
+            CleverBooks [A SASS landing page!]
+          </p>
+        </a>
+    
+        <div
+          onClick={() => {
+            alert("🆈🅾🆄 are 🄲🅄🅁🅁🄴🄽🅃🄻🅈 on the webpage ( ͡❛ ͜ʖ ͡❛)");
+          }}
+          className="block h-72 w-56 cursor-pointer "
+        >
+          <img
+            className="block h-56 w-56 rounded-xl"
+            src="https://cdn0.iconfinder.com/data/icons/fashion-avatars/512/Avatar_07.png"
+            alt=""
+          />
+          <p
+            className={
+              localStorage.getItem("theme") == "dark"
+                ? "text-white text-md text-center"
+                : "text-gray-700 text-md text-center"
+            }
+          >
+            Portfolio
+          </p>
+        </div>
+       
+      </div>
+      </div>
       <p
         className={
           localStorage.getItem("theme") == "dark"
@@ -192,6 +270,7 @@ setCl("animate-on-scroll")
           </a>
         </div>
       </div>
+      <a href="https://amaranth-joelly-62.tiiny.site" target="_blank" className={localStorage.getItem("theme")=="dark"?"block text-white  hover:text-orange-600 font-bold text-center text-xl mt-10":"block hover:text-orange-600 font-bold text-center text-xl mt-40"}>Click to view resume</a>;
       <p
         className={
           localStorage.getItem("theme") == "dark"
