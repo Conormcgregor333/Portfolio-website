@@ -1,4 +1,5 @@
 import { useEffect, useState} from "react";
+import "./App.css";
 export default function Home() {
 /* let ref=useRef(null); */
 let [cl,setCl]=useState('');
@@ -21,7 +22,7 @@ setCl("animate-on-scroll")
 ,[])
   return (
     <div /* ref={ref} */ className={`scroll-animate ${cl}`}>
-      <div  className=" flex flex-wrap justify-center md:justify-normal xl:justify-normal 2xl:justify-normal mt-40 mx-auto w-3/4 sm:w-3/4 md:w-2/3 xl:w-1/2 2xl:w-1/2 place-items-center">
+      <div  className=" flex flex-wrap justify-center md:justify-normal xl:justify-normal 2xl:justify-normal home-start  mx-auto w-3/4 sm:w-3/4 md:w-2/3 xl:w-1/2 2xl:w-1/2 place-items-center">
         <img
           className="block w-40 h-40 rounded-full"
           src="https://lakeviewlabs.io/wp-content/uploads/2018/11/File.jpg"
